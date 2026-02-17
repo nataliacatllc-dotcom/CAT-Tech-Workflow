@@ -510,6 +510,60 @@
     </div>
   </div>
 
+  <div class="connector"><div class="arrow-down"></div></div>
+
+  <div class="row center">
+    <div class="node decision">
+      <div class="node-title">Customer Approval</div>
+      <div class="node-sub">Customer reviews drawings. Are revisions needed?</div>
+    </div>
+  </div>
+
+  <!-- Branch: Revisions needed / Approved -->
+  <div style="display:flex; justify-content:center; margin:2px 0;">
+    <div style="width:2px; height:20px; background:var(--line);"></div>
+  </div>
+  <div style="display:flex; justify-content:center; gap:140px; margin:0;">
+    <div style="display:flex; flex-direction:column; align-items:center;">
+      <div class="arrow-label">REVISIONS NEEDED</div>
+      <div style="width:2px; height:20px; background:var(--line); position:relative;">
+        <div style="position:absolute;bottom:-5px;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid rgba(245,166,35,0.4);"></div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center;">
+      <div class="arrow-label">APPROVED</div>
+      <div style="width:2px; height:20px; background:var(--line); position:relative;">
+        <div style="position:absolute;bottom:-5px;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid rgba(245,166,35,0.4);"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex; justify-content:center; gap:64px; margin-bottom:12px;">
+    <div class="node" style="border-color:var(--amber-dim); background:linear-gradient(135deg,var(--steel-mid),#2a2218); max-width:180px;">
+      <div class="node-title" style="font-size:0.8rem;">Drawings Revised</div>
+      <div class="node-sub">Yamilex makes changes and resubmits</div>
+      <span class="node-badge badge-owner">Yamilex</span>
+    </div>
+    <div class="node" style="border-color:var(--teal); max-width:200px;">
+      <div class="node-title">Drawings Approved</div>
+      <div class="node-sub">Customer accepts final design</div>
+    </div>
+  </div>
+
+  <div style="display:flex; justify-content:center; margin:0;">
+    <div style="width:2px; height:20px; background:var(--line); position:relative;">
+      <div style="position:absolute;bottom:-5px;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid rgba(245,166,35,0.4);"></div>
+    </div>
+  </div>
+
+  <div class="row center">
+    <div class="node" style="max-width:300px;">
+      <div class="node-title">Procurement Review Meeting</div>
+      <div class="node-sub">Domenick, Natalia, and Yamilex review approved drawings to clarify parts to order or changes needed</div>
+      <span class="node-badge badge-owner">Domenick / Yamilex / Natalia</span>
+    </div>
+  </div>
+
   <div class="connector">
     <div class="arrow-label">Triggers vendor ordering + first invoice</div>
     <div class="arrow-down"></div>
@@ -599,6 +653,13 @@
       <div class="node template" style="min-width:140px; max-width:155px;">
         <div class="node-title" style="font-size:0.75rem;">10. Lakeside Supply</div>
         <div class="node-sub" style="font-size:0.68rem;">Misc. components</div>
+        <span class="node-badge badge-doc" style="font-size:0.55rem;">PO Template</span>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:0;">
+      <div class="node template" style="min-width:140px; max-width:155px;">
+        <div class="node-title" style="font-size:0.75rem;">11. Other</div>
+        <div class="node-sub" style="font-size:0.68rem;">Non-standard vendors</div>
         <span class="node-badge badge-doc" style="font-size:0.55rem;">PO Template</span>
       </div>
     </div>
@@ -734,7 +795,7 @@
   <div class="questions-section">
     <div class="questions-title">Workflow Decisions — Confirmed</div>
     <div class="q-item"><span class="q-num">01</span><span><strong style="color:var(--white)">Quote path:</strong> All projects get a quote number. Verbal/email proposals are converted to a formal quote. Job number assigned only after customer PO is received (from job log).</span></div>
-    <div class="q-item"><span class="q-num">02</span><span><strong style="color:var(--white)">Vendor order:</strong> Quote line items mirror the Project Control in standard order — Herding, CAT Controls, Mike Pavek, JH Bennett, Spencer-Howden, Prater, HP Products, Norres, Lyle Pizzino, Lakeside Supply Co.</span></div>
+    <div class="q-item"><span class="q-num">02</span><span><strong style="color:var(--white)">Vendor order:</strong> Quote line items mirror the Project Control in standard order — Herding, CAT Controls, Mike Pavek, JH Bennett, Spencer-Howden, Prater, HP Products, Norres, Lyle Pizzino, Lakeside Supply Co., Other (for non-standard vendors).</span></div>
     <div class="q-item"><span class="q-num">03</span><span><strong style="color:var(--white)">Payment schedule:</strong> Invoice split varies by project and must be shown on the quote so the customer sees the pay schedule upfront.</span></div>
     <div class="q-item"><span class="q-num">04</span><span><strong style="color:var(--white)">Drawing trigger:</strong> Approval drawings submitted 2–4 weeks after PO triggers Invoice #1 (engineering). Procurement orders placed at same time.</span></div>
     <div class="q-item"><span class="q-num">05</span><span><strong style="color:var(--white)">Change orders:</strong> Same quote number retained. Change order scope added as new line items on the invoice — no new quote issued.</span></div>
